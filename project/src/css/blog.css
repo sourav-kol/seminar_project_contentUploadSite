@@ -1,0 +1,150 @@
+.blog-container {
+  position: relative;
+  width: 100%;
+  top: 1em;
+  min-width: 300px;
+  min-height: 26em;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  /* padding: 0rem 3rem; */
+  margin: 2em auto;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+/* bring this to center  */
+.blogs {
+  position: relative;
+  width: 18.5em;
+  height: 26em;
+  border-radius: 0.5em;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  box-shadow: 0 0 4em -1em black;
+}
+
+.blog-img,
+.blog-content {
+  position: absolute;
+  width: 95%;
+  left: 2.5%;
+  top: 2.5%;
+  border-radius: 0.5rem;
+  height: 95%;
+  overflow: hidden;
+  background-color: rgb(252, 164, 178);
+  z-index: 10;
+}
+
+.overlay {
+  width: 18.5em;
+  height: 26em;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.blog-author {
+  position: relative;
+  width: 98%;
+  left: 1%;
+  top: 1%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.author-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: pink;
+}
+
+.blog-author h4 {
+  position: relative;
+  top: 8px;
+  width: 68%;
+  height: 80%;
+  font-size: 16px;
+  font-weight: 100;
+  overflow: hidden;
+}
+
+.blog-title {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: 63%;
+}
+
+.blog-title h1 {
+  position: relative;
+  font-size: 2em;
+  word-spacing: 0.1em;
+  line-height: 1.3em;
+}
+
+.info {
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info a {
+  padding: 4px;
+  border-radius: 4px;
+  color: black;
+  transition-duration: 0.3s;
+  border: 2px solid black;
+}
+
+.lcs {
+  width: 30%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.lcs h4 {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.like-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: rgb(223, 39, 69);
+}
+
+@media screen and (max-width: 1100px) {
+  .blog-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info a:hover {
+  background-color: white;
+  border-color: white;
+  cursor: pointer;
+  color: rgb(243, 139, 156);
+}

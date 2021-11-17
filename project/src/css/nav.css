@@ -1,0 +1,263 @@
+.nav-container {
+  width: 100%;
+  min-width: 300px;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  /* overflow: hidden; */
+  z-index: 20;
+}
+
+.nav {
+  position: relative;
+  height: 69px;
+  width: 36%;
+  top: 8px;
+  min-width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  /* border: 2px solid black; */
+}
+
+.nav-center {
+  width: 60%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 2px solid black  ;   */
+}
+
+.nav-right-sub {
+  position: relative;
+  min-width: 100px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 15%;
+  right: 0%;
+  /* border: 2px solid black  ;   */
+}
+
+.nav-right {
+  justify-content: space-around;
+}
+
+.hamburger {
+  width: 50px;
+  height: 40px;
+  position: relative;
+  /* border: 2px solid black;  */
+}
+
+.hamstick {
+  position: relative;
+  background-color: black;
+  border-radius: 1px;
+  float: right;
+}
+
+.ham1 {
+  height: 3px;
+  top: 20%;
+  width: 100%;
+}
+
+.ham2 {
+  height: 3px;
+  top: 32%;
+  width: 100%;
+}
+
+.ham3 {
+  height: 3px;
+  top: 45%;
+  width: 60%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.brd {
+  border: 2px solid rgb(243, 122, 142);
+  background-color: rgb(243, 122, 142);
+  color: white;
+}
+
+.nav-center a {
+  font-size: 17px;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 5px 9px 5px 9px;
+}
+
+.nav-center-mobile {
+  width: 72%;
+  position: relative;
+  height: 20%;
+  left: 40px;
+  top: 40px;
+  overflow: hidden;
+  /* border: 1px solid black; */
+}
+
+.nav-center-mobile a {
+  position: relative;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+  padding: 5px 9px 5px 9px;
+  border: 2px solid transparent;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.search {
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.active-btn {
+  background-color: pink;
+  color: white;
+}
+
+@media only screen and (max-width: 1110px) {
+  .nav-right-sub {
+    width: 75%;
+    left: 12.5%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-right-sub {
+    width: 85%;
+    left: 7%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-right {
+    width: 40%;
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 30px;
+  }
+
+  .search {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-center {
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  .nav-right {
+    width: 50%;
+  }
+
+  .nav-right-sub {
+    width: 82%;
+    left: 9%;
+  }
+
+  .nav-center a {
+    /* padding: 3px 8px 3px 8px; */
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .nav-center {
+    width: 55%;
+  }
+
+  .nav-right-sub {
+    left: 0%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .nav-container {
+    justify-content: space-between;
+  }
+
+  .nav-left {
+    left: 6%;
+  }
+
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .nav-right {
+    right: 6%;
+    width: 20%;
+    justify-content: space-between;
+  }
+
+  .nav-center {
+    display: none;
+  }
+}
+
+.nav-center a:hover {
+  cursor: pointer;
+  background-color: rgb(243, 122, 142);
+  border: 2px solid;
+  border-color: rgb(243, 122, 142);
+  transition-duration: 0.3s;
+  color: white;
+  border-radius: 4px;
+}
+/* dosen't work */
+.brd:hover a {
+  background-color: white;
+}
+
+.nav-center-mobile a:hover {
+  background-color: white;
+  color: rgb(243, 122, 142);
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.hamburger:hover .hamstick {
+  cursor: pointer;
+  background-color: rgb(243, 122, 142);
+}

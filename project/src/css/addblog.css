@@ -1,0 +1,56 @@
+.add-container{
+    width: 100%;
+    min-height: 720px;
+}
+
+.content{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    left: 10%;
+    /* border: 1px solid black; */
+}
+
+.content h1{
+    text-align: center;
+    font-weight: 100;
+}
+
+.description{
+    height: 40px;
+}
+
+.form-fields input{
+    /* background-color: rgb(253, 201, 210); */
+}
+
+.form-fields{
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+textarea{
+    margin-left: 5%;
+    /* border:none;
+    border-bottom: 1px solid black; */
+}
+
+.add-stuff{
+    width: 85%;
+    position: relative;
+    left: 7%;
+    top: 3px;
+    height: 30px;
+    display: flex;
+    justify-content: right;
+    /* border: 1px solid black; */
+}
+
+.add-para{
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid black; */
+    margin-right: 8px;
+    float: right;
+}
+
